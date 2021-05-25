@@ -1,0 +1,33 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.flex-container {
+    display: flex;
+    
+}
+
+.flex-item-1 {
+    
+    display: flex;
+}
+
+.flex-item-2 {
+ 
+    display: flex;
+}
+
+.flex-item-3{
+
+    display: flex;
+
+}
+
+.flex-item-4{
+  
+    display: flex;
+
+}
+
