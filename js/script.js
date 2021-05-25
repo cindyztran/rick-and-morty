@@ -4,9 +4,10 @@ let showData;
     const $species = $('#species');
     const $origin = $('#origin');
     const $img = $('#img')
+    // const $cardContainer = $('#card-container')
 
     function render() {
-        $img.innerHTML = showData['results'][0]['image'];
+        $img.attr("src",showData['results'][0]['image']);
         $characterName.text(showData['results'][0]['name']);
         $status.text(showData['results'][0]['status']);
         $species.text(showData['results'][0]['species']);
@@ -14,6 +15,7 @@ let showData;
 
 
     };
+    
 
     function handleGetData(event) {
         event.preventDefault();
@@ -25,7 +27,7 @@ let showData;
         .then(
             function(data) {
                 showData = data; 
-                render();
+                render(data.results);
 
             },
             function(error) {
@@ -34,4 +36,31 @@ let showData;
         );
 
     }
+
+    // function render(){
+    //     const $img = $('#img')
+    //     showData.results.forEach(i => {
+    //         $img.innerHTML = $img.innerHTML + 
+    //         `<img src=${i.image}></img>`
+    //     });
+    // }
+
+    // function render(characters){
+    //     cardContainer = document.getElementById('#card-container');
+    //     characters.forEach(element => {
+    //         cardContainer.innerHTML = cardContainer.innerHTML + 
+    //         `<div id='character-card-${element.id}'
+    //         <img src="${element.img}">
+    //             <p>Name: </p>
+    //             <p class="name">${element.name}</p>
+    //             <p>Status: </p>
+    //             <p class="status">${element.status}</p>
+    //             <p>Species: </p>
+    //             <p class="species">${element.species}</p>
+    //             <p>Origin: </p>
+    //             <p class="planet">${element.origin}</p>
+    //         </div>`
+    //     });
+    // }
+
     $('form').on('submit', handleGetData);
