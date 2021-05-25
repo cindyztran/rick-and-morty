@@ -1,11 +1,16 @@
-let showData;
+
+    //app state variable 
+    let showData;
+
+    //const variables 
     const $characterName = $('#characterName');
     const $status = $('#status');
     const $species = $('#species');
     const $origin = $('#origin');
     const $img = $('#img')
-    // const $cardContainer = $('#card-container')
 
+
+//functions
     function render() {
         $img.attr("src",showData['results'][0]['image']);
         $characterName.text(showData['results'][0]['name']);
@@ -15,9 +20,9 @@ let showData;
 
 
     };
-    
 
     function handleGetData(event) {
+        //prevent page refresh
         event.preventDefault();
         const $searchCharacter = $('input#search').val();
 
@@ -26,41 +31,19 @@ let showData;
         })
         .then(
             function(data) {
+                //success
                 showData = data; 
-                render(data.results);
+                render();
 
             },
             function(error) {
+                //failure 
                 console.log('BAD REQUEST: ', error)
+                alert('Sorry! The character you entered does not exist.')
             }
         );
 
     }
 
-    // function render(){
-    //     const $img = $('#img')
-    //     showData.results.forEach(i => {
-    //         $img.innerHTML = $img.innerHTML + 
-    //         `<img src=${i.image}></img>`
-    //     });
-    // }
-
-    // function render(characters){
-    //     cardContainer = document.getElementById('#card-container');
-    //     characters.forEach(element => {
-    //         cardContainer.innerHTML = cardContainer.innerHTML + 
-    //         `<div id='character-card-${element.id}'
-    //         <img src="${element.img}">
-    //             <p>Name: </p>
-    //             <p class="name">${element.name}</p>
-    //             <p>Status: </p>
-    //             <p class="status">${element.status}</p>
-    //             <p>Species: </p>
-    //             <p class="species">${element.species}</p>
-    //             <p>Origin: </p>
-    //             <p class="planet">${element.origin}</p>
-    //         </div>`
-    //     });
-    // }
-
+    //event listener
     $('form').on('submit', handleGetData);
