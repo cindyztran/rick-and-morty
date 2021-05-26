@@ -2,7 +2,7 @@
     //app state variable 
     let showData;
 
-    //const variables 
+    //variables 
     const $characterName = $('#characterName');
     const $status = $('#status');
     const $species = $('#species');

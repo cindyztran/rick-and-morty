@@ -1,9 +1,13 @@
+* {
+    box-sizing: border-box;
+  }
+  
 body {
-    background-color: white;
-    background-image: url('https://wallpaperaccess.com/full/831751.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
+    -webkit-background-size: cover;
+    -moz-background-size: cover; 
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat; background-size: cover;
 }
 
 
@@ -15,7 +19,8 @@ header {
     text-shadow: 5px 5px black;
     display: flex;
     justify-content: center;
-    
+    margin: 0;
+    line-height: 30px;
 }
 
 h1 span{
@@ -24,18 +29,18 @@ h1 span{
 }
 
 h2 {
-
     font-family: 'Rock Salt', cursive;
     font-size: .5em;
     display: flex;
     justify-content: center;
+    margin: 0;
+    line-height:30px;
     
 }
 
 .flex-container {
     background-color: rgb(5, 173, 195);
     font-family: 'Courier New', Courier, monospace;
-    /* opacity: 98%; */
     color: white;
     text-shadow: 1px 1px rgb(159, 200, 94);
     display: flex;
@@ -44,7 +49,7 @@ h2 {
     align-items: center;
     height: 425px;
     width: 300px;
-    margin:auto;
+    margin: auto;
     border: 1px black;
     border-radius: 15px;
     box-shadow: 3px 3px 5px 3px rgb(159, 200, 94);
@@ -98,3 +103,23 @@ h2 {
 
 }
 
+@media only screen and (min-width: 375px) {
+
+    body {
+        background-image: url('https://wallpaperaccess.com/full/831751.png');
+    }
+
+}
+
+@media only screen and (min-width: 768px) {
+    body {
+        background-image: url('https://wallpaperaccess.com/full/831751.png');
+    }
+    
+}
+
+@media only screen and (min-width: 1024px) {
+    body {
+        background-image: url('https://wallpaperaccess.com/full/831751.png');
+    }
+}
