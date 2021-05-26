@@ -8,15 +8,11 @@ body {
 
 
 header {
-    /* background-image: url('https://cdn.mos.cms.futurecdn.net/T7XVEDX27hxmVEV7nVir5K.jpg'); */
     font-family: 'Creepster', cursive;
     font-size: 30px;
     color: rgb(5, 173, 195);
     -webkit-text-stroke: 1px rgb(159, 200, 94);
     text-shadow: 5px 5px black;
-    border: 1px solid black;
-    width: 100%;
-    height: auto;
     display: flex;
     justify-content: center;
     
@@ -25,28 +21,28 @@ header {
 h1 span{
     font-size: .7em;
 }
+
 h2 {
     font-size: .8em;
     display: flex;
     justify-content: center;
 }
 
-.image {
-    min-height: 100px;
-    min-width: 100px;
-}
 
 .flex-container {
     color: white;
-    width: auto;
-    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
 }
+#img{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
 
+}
 .flex-item-1 {
     display: flex;
     
