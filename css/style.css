@@ -1,24 +1,16 @@
 body {
     background-color: white;
-   
-}
-
-/* .hero-image {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    background-image: url("https://media.vanityfair.com/photos/5ac2507e46fa5d6627ca6a57/7:3/w_1070,h_458,c_limit/Rick-and-Morty-April-Fools-Prank.jpg");
-    height: 50%;
-    background-position: center;
+    background-image: url('https://wallpaperaccess.com/full/831751.png');
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-} */
+}
+
 
 header {
     /* background-image: url('https://cdn.mos.cms.futurecdn.net/T7XVEDX27hxmVEV7nVir5K.jpg'); */
     font-family: 'Creepster', cursive;
-    font-size: 40px;
+    font-size: 30px;
     color: rgb(5, 173, 195);
     -webkit-text-stroke: 1px rgb(159, 200, 94);
     text-shadow: 5px 5px black;
@@ -27,10 +19,6 @@ header {
     height: auto;
     display: flex;
     justify-content: center;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
     
 }
 
@@ -41,8 +29,6 @@ h2 {
     font-size: .8em;
     display: flex;
     justify-content: center;
-    padding-right: 50px;
-
 }
 
 .image {
@@ -51,14 +37,13 @@ h2 {
 }
 
 .flex-container {
+    color: white;
     width: auto;
     height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 40px;
-   
 
 }
 
