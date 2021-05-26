@@ -11,6 +11,7 @@
 
 
 //functions
+
     function render() {
         $img.attr("src",showData['results'][0]['image']);
         $characterName.text(showData['results'][0]['name']);
@@ -32,8 +33,10 @@
         .then(
             function(data) {
                 //success
-                showData = data; 
+                showData = data;
                 render();
+               
+
 
             },
             function(error) {
