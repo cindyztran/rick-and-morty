@@ -15,7 +15,7 @@ header {
     font-family: 'Creepster', cursive;
     font-size: 30px;
     color: rgb(5, 173, 195);
-    -webkit-text-stroke: 1px rgb(159, 200, 94);
+    -webkit-text-stroke: 3px rgb(159, 200, 94);
     text-shadow: 5px 5px black;
     display: flex;
     justify-content: center;
@@ -31,6 +31,8 @@ h1 span{
 h2 {
     font-family: 'Rock Salt', cursive;
     font-size: .5em;
+    -webkit-text-stroke: 1px rgb(159, 200, 94);
+    text-shadow: 5px 5px black;
     display: flex;
     justify-content: center;
     margin: 0;
