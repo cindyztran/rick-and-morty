@@ -9,27 +9,32 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script defer src="./js/script.js"></script>
-    <title>Project One</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
+
+    <title>Rick and Morty</title>
 </head>
 
 <body>
-    <header> 
-        <h1>Rick and Morty Character Search</h1>
+    <header>
+        <div class="hdr"><h1>Rick <span>and</span> Morty</h1>
+        <h2>Character Search</h2>
+        </div>
     </header>
-    
     <main>
-        <div class="flex-container"></div>
-            
-            <img src="" id="img">
-            <div class= "flex-item-1">
+        <div class="flex-container">
+            <div class="image">
+                <img src="" id="img">
+            </div>
+            <div class="flex-item-1">
                 <p>Name:&ensp;</p>
                 <p id="characterName"> </p>
             </div>
-            <div class= "flex-item-2">
+            <div class="flex-item-2">
                 <p>Status:&ensp;</p>
                 <p id="status"></p>
             </div>
-            <div class= "flex-item-3">
+            <div class="flex-item-3">
                 <p>Species:&ensp;</p>
                 <p id="species"></p>
             </div>
@@ -37,15 +42,19 @@
                 <p>Origin:&ensp;</p>
                 <p id="origin"></p>
             </div>
-            
         </div>
-            
+
+
     </main>
-    
-    <form>
-        <input type="text" id="search" />
-        <input type="submit" id="get" placeholder="search" /> 
-    </form>
-    
+    <div class="input">
+        <form>
+            <input type="text" id="search" />
+            <input type="submit" id="get" placeholder="search" />
+        </form>
+    </div>
+
+
+
 </body>
+
 </html>

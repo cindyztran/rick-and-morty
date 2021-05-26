@@ -39,7 +39,7 @@
             function(error) {
                 //failure 
                 console.log('BAD REQUEST: ', error)
-                alert('Sorry! The character you entered does not exist.')
+                alert('Aw geez! The character you entered does not belong to this multiverse.')
             }
         );
 
