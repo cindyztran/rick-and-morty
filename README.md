@@ -26,7 +26,7 @@ A simple web app for visualizing Rick and Morty API data by name.
 
 ## Getting Started
 
-[Click here](#) to see working app. 
+[Click here](https://cindyztran.github.io/rick-and-morty/) to see working app. 
 
 
 
