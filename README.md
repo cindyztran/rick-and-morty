@@ -1,6 +1,6 @@
 # Rick and Morty Character Search
 
-A simple web app for visualizing Rick and Morty API data by name.
+A simple web app for visualizing Rick and Morty API character data by name.
 
 
 ## Technologies
