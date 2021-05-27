@@ -91,7 +91,7 @@ h2 {
 .flex-item-4{
   
     display: flex;
-    padding-left: 15px;
+    padding-left: 10px;
 
 
 }
@@ -121,6 +121,11 @@ input[type=submit] {
     cursor: pointer;
     border-radius: 5px;
 }
+
+input[type=submit]:hover {
+    background: rgb(124, 175, 41);
+}
+
 
 @media only screen and (min-width: 375px) {
 

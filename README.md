@@ -22,6 +22,9 @@ A simple web app for visualizing Rick and Morty API data by name.
 
 ### Images of Working App
 
+![screenshot](working-app-1.png)
+
+![screenshot](working-app-2.png)
 
 
 ## Getting Started
