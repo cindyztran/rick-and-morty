@@ -105,6 +105,23 @@ h2 {
 
 }
 
+input[type=text] {
+    padding:5px; 
+    border:2px solid #ccc; 
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+
+input[type=submit] {
+    padding: 5px 15px;
+    background: rgb(159, 200, 94);
+    border: 0 none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
 @media only screen and (min-width: 375px) {
 
     body {
