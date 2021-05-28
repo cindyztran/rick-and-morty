@@ -17,10 +17,9 @@ header {
     color: rgb(5, 173, 195);
     -webkit-text-stroke: 2px rgb(159, 200, 94);
     text-shadow: 5px 5px black;
+    margin: 0;
     display: flex;
     justify-content: center;
-    margin: 0;
-    line-height: 30px;
 }
 
 h1 span{
@@ -29,15 +28,14 @@ h1 span{
 }
 
 h2 {
+    display: flex;
+    justify-content: center;
     font-family: 'Rock Salt', cursive;
     font-size: .5em;
     -webkit-text-stroke: 1px rgb(159, 200, 94);
-    text-
-    /* text-shadow: 5px 5px black; */
-    display: flex;
-    justify-content: center;
-    margin: 0;
     line-height:30px;
+
+
     
 }
 
