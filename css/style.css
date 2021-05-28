@@ -32,7 +32,8 @@ h2 {
     font-family: 'Rock Salt', cursive;
     font-size: .5em;
     -webkit-text-stroke: 1px rgb(159, 200, 94);
-    text-shadow: 5px 5px black;
+    text-
+    /* text-shadow: 5px 5px black; */
     display: flex;
     justify-content: center;
     margin: 0;
